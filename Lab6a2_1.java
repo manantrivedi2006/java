@@ -6,9 +6,9 @@ class Time{
 		this.min+=min;
 		
 	}
-	public void add(int hour,int min){
-		this.hour+=hour;
-		this.min+=min;
+	public void add(Time t2){
+		this.hour+=t2.hour;
+		this.min+=t2.min;
 		if(this.min>=60){
 			this.hour++;
 			this.min=this.min-60;}
@@ -20,6 +20,6 @@ public class Lab6a2_1{
 	public static void main(String []args){
 		Time t1=new Time(2,30);
 		Time t2=new Time(2,30);
-		t1.add(2,30);
+		t1.add(t2);
 	}
 }
