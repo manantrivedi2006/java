@@ -1,5 +1,4 @@
-
-		class Count{
+class Count{
 	static int count=0;
 public	Count(){
 		this.count++;
